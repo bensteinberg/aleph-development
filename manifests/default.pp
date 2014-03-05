@@ -47,21 +47,21 @@ exec { 'untar_atmel':
 }
 
 exec { 'get_blackfin':
-  command => 'wget http://downloads.sourceforge.net/project/adi-toolchain/2013R1/2013R1-RC1/x86_64/blackfin-toolchain-elf-gcc-4.5-2013R1-RC1.x86_64.tar.bz2',
+  command => 'wget http://downloads.sourceforge.net/project/adi-toolchain/2013R1/2013R1-RC1/x86_64/blackfin-toolchain-elf-gcc-4.3-2013R1-RC1.x86_64.tar.bz2',
   path => '/usr/bin',
   require => Package['wget'],
   timeout => 1800,
 }
 
 exec { 'unzip_blackfin':
-  command => 'tar -xjf blackfin-toolchain-elf-gcc-4.5-2013R1-RC1.x86_64.tar.bz2',
+  command => 'tar -xjf blackfin-toolchain-elf-gcc-4.3-2013R1-RC1.x86_64.tar.bz2',
   path => '/bin',
   require => [ Exec['get_blackfin'], Package['bzip2'] ],
   timeout => 1800,
 }
 
 exec { 'update_path':
-  command => 'echo "PATH=\$PATH:~/avr32-gnu-toolchain/bin:~/opt/uClinux-45/bfin-elf/bin" >> /home/vagrant/.bashrc',
+  command => 'echo "PATH=\$PATH:~/avr32-gnu-toolchain/bin:~/opt/uClinux/bfin-elf/bin" >> /home/vagrant/.bashrc',
   path => '/bin',
 }
 
