@@ -11,7 +11,7 @@ Here are the steps:
 ```
 vagrant box add precise64 http://files.vagrantup.com/precise64.box
 ```
-* Get the avr32 toolchain and headers [from Atmel](http://www.atmel.com/tools/ATMELAVRTOOLCHAINFORLINUX.aspx). Unfortunately, you have to download these by hand, since Atmel wants your email address.  You want "Atmel AVR 32-bit Toolchain 3.4.2 - Linux 64-bit" and "Atmel AVR 8-bit and 32-bit Toolchain (3.4.2) 6.1.3.1475 - Header Files" -- the filenames at the moment are avr32-gnu-toolchain-3.4.2.435-linux.any.x86_64.tar.gz and atmel-headers-6.1.3.1475.zip. 
+* Get the avr32 toolchain and headers [from Atmel](http://www.atmel.com/tools/ATMELAVRTOOLCHAINFORLINUX.aspx). Unfortunately, you have to download these by hand, since Atmel wants your email address.  You want "Atmel AVR 32-bit Toolchain 3.4.2 - Linux 64-bit" and "Atmel AVR 8-bit and 32-bit Toolchain (3.4.2) 6.1.3.1475 - Header Files" -- the filenames are avr32-gnu-toolchain-3.4.2.435-linux.any.x86_64.tar.gz and atmel-headers-6.1.3.1475.zip. 
 * Clone this repository:
 ```
 git clone https://github.com/bensteinberg/aleph-development.git
