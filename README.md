@@ -61,6 +61,6 @@ sudo /etc/init.d/vboxadd setup
 
 ### TODO/ISSUES
 
-* In order to get this working, the manifest relies on specific versions of the toolchain files.  It would be much better for it to handle subsequent versions as well.
-* So far, I have compiled bees and beekeep.  (I'm still tracking down a problem with compiling modules.)  It's possible that other targets require libraries not yet installed in the virtual machine; please let me know if that's the case.
+* In order to get this working, the manifest relies on specific versions of the toolchain files.  It would be much better for it to handle subsequent versions as well.  (However, given a problem with the latest blackfin gcc, maybe it's better to stick with known versions.)
+* So far, I have compiled bees, lines, and beekeep.  It's possible that other targets require libraries not yet installed in the virtual machine; please let me know if that's the case.
 * Although beekeep requires the libjansson4 package, I also had to compile jansson2.5 in order to get the right libraries and header files.  I've packaged it and included it in the repo as libjansson.tar.gz -- there may be a better way of including this.
