@@ -57,7 +57,7 @@ vagrant ssh
 sudo /etc/init.d/vboxadd setup
 ```
 
-* I've included emacs and vim; obviously, you can install whatever you want with `sudo aptitude update ; sudo aptitude install whizbang`, but let me know if there's anything you think should be in environment by default.
+* I've included emacs and vim; obviously, you can install whatever you want with `sudo aptitude update ; sudo aptitude install whizbang`, but let me know if there's anything you think should be in the environment by default.
 
 ### TODO/ISSUES
 
